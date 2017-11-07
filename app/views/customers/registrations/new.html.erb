@@ -29,11 +29,15 @@
      <%= f.text_field :zip %>
    </div>
 
-
   <div class="field">
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true %>
   </div>
+
+    <div class="field">
+      <%= f.label :phone %><br />
+      <%= f.text_field :phone, class: "mask-phone" %>
+    </div>
 
   <div class="field">
     <%= f.label :password %>
